@@ -1,32 +1,17 @@
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+<html>
+    <head>
+    <title>Tic Tac Toe Game</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
-
 <body>
-    <div class="board-container flex-container flex-column flex-center flex">
-        <div class="flex-container">
-            <div class="title"> Dylans Tic Tac Toe Game</div>
-        </div>
-        <div class="board flex-container flex-wrap">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
+    <div class="board">
+    <h2 id="game-message"> Tic Tac Toe</h2>    
+    <div id= "row-1"><div onclick="play(this);"></div><div onclick="play(this);"></div><div onclick="play(this);"></div></div>
+    <div id= "row-2"><div onclick="play(this);"></div><div onclick="play(this);"></div><div onclick="play(this);"></div></div>
+    <div id= "row-3"><div onclick="play(this);"></div><div onclick="play(this);"></div><div onclick="play(this);"></div></div>
     </div>
-
-
 </body>
-
 </html>

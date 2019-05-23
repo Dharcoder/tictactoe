@@ -1,49 +1,51 @@
-html,
-body {
-    height: 100%
-    font-family: 'Open Sans', sans-serif;
-    background-color: gainsboro;
+* {margin: 0; padding: 0;
+user-select: none;
+}
+html {}
+
+h2.game-message{
+    font-size: 65px;
+    text-align: 65px;
+    border:2px solid red;
+    height: 200px;
 }
 
-
-.flex-container {
-    display:flex;
-}
-.flex-column{
-    flex-direction:column;
+span
+{
+    font-size: 75px;
+    margin-top: 20px;
 }
 
-.flex-wrap {
-    flex-wrap: wrap;
-}
+body
+{
+background-color: blue;
+width: 1000px;
+margin: 10px auto;
+text-align: center;
+padding: 10px;
 
-.flex-center {
-    justify-content: center;
-    align-items: center;
 }
-
-.title {
-    font-size: 42px;
-    color: hotpink;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-.board-container {
-    height: 100%;
-    width: 100%;
-}
-
-.board {
-    width: 618px;
-}
-
-.square {
+div[id^="row-"] div
+{
     width: 200px;
     height: 200px;
-    border:3px solid black;
+    border: 1px solid red;
+    float: left;
 }
-
-.square:hover {
-background-color: gold
+div[id^="row-"] div:first-child{border-left: none;}
+div[id^="row-"] div:last-child{border-right: none;}
+div[id^="row-1"] div{border-top: none;}
+div[id^="row-3"] div{border-bottom: none;}
+div[id^="row-"]
+{
+    clear: float;
+    width: 608px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.board
+{
+    width: 608px;
+    overflow: hidden;
+    margin: 0 auto;
 }
